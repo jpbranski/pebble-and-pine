@@ -19,24 +19,24 @@ export default function Footer() {
         bgcolor: 'background.paper',
         borderTop: '1px solid',
         borderColor: 'divider',
-        py: { xs: 5, md: 7 },
+        py: { xs: 3, md: 4 },
         mt: 'auto',
       }}
     >
       <Container maxWidth="lg">
-        <Stack spacing={7}>
+        <Stack spacing={4}>
           {/* Logo and Tagline - Centered */}
           <Box
             sx={{
               textAlign: 'center',
-              mb: 4
+              mb: 1
             }}
           >
             <Box
               sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                mb: 1.5
+                mb: 1
               }}
             >
               <Logo width={56} height={56} />
@@ -46,7 +46,7 @@ export default function Footer() {
               sx={{
                 fontFamily: '"Playfair Display", "Georgia", "Times New Roman", serif',
                 fontWeight: 600,
-                mb: 0.75,
+                mb: 0.5,
                 letterSpacing: '0.02em',
                 color: 'text.primary'
               }}
@@ -72,7 +72,7 @@ export default function Footer() {
           {/* Three Column Layout - Centered */}
           <Grid
             container
-            spacing={{ xs: 4, md: 10 }}
+            spacing={{ xs: 3, md: 6 }}
             sx={{
               maxWidth: 1100,
               mx: 'auto'
@@ -105,7 +105,7 @@ export default function Footer() {
                   fontWeight: 600,
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
-                  mb: 2,
+                  mb: 1.5,
                   textAlign: 'center',
                   color: 'text.primary',
                   fontSize: '0.8rem'
@@ -114,7 +114,7 @@ export default function Footer() {
                 Navigate
               </Typography>
               <Stack
-                spacing={1.25}
+                spacing={1}
                 sx={{
                   alignItems: 'center',
                   '& a': {
@@ -171,7 +171,7 @@ export default function Footer() {
                   fontWeight: 600,
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
-                  mb: 2,
+                  mb: 1.5,
                   textAlign: 'center',
                   color: 'text.primary',
                   fontSize: '0.8rem'
@@ -180,7 +180,7 @@ export default function Footer() {
                 Connect
               </Typography>
               <Stack
-                spacing={2.5}
+                spacing={1.5}
                 sx={{
                   alignItems: 'center'
                 }}
@@ -188,7 +188,7 @@ export default function Footer() {
                 {/* Social Media Icons */}
                 <Stack
                   direction="row"
-                  spacing={2.5}
+                  spacing={2}
                   sx={{
                     '& a': {
                       color: 'text.secondary',
@@ -263,7 +263,7 @@ export default function Footer() {
                   fontWeight: 600,
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
-                  mb: 2,
+                  mb: 1.5,
                   textAlign: 'center',
                   color: 'text.primary',
                   fontSize: '0.8rem'
@@ -272,7 +272,7 @@ export default function Footer() {
                 Legal
               </Typography>
               <Stack
-                spacing={1.25}
+                spacing={1}
                 sx={{
                   alignItems: 'center',
                   '& a': {
@@ -307,28 +307,33 @@ export default function Footer() {
           </Grid>
 
           {/* Divider before bottom section */}
-          <Divider sx={{ opacity: 0.08, mt: 6 }} />
+          <Divider sx={{ opacity: 0.08, my: 2 }} />
 
           {/* Affiliate Disclaimer - Bottom Section */}
-          <Typography
-            variant="caption"
-            color="text.secondary"
+          <Box
             sx={{
-              textAlign: 'center',
-              maxWidth: '65ch',
-              mx: 'auto',
-              mt: '3rem !important',
-              mb: '2rem !important',
-              lineHeight: 1.7,
-              opacity: 0.7,
-              px: 2,
-              fontSize: '0.8rem'
+              display: 'flex',
+              justifyContent: 'center',
+              width: '100%'
             }}
           >
-            <strong style={{ fontWeight: 600 }}>Affiliate Disclaimer:</strong> Some links on this site are affiliate links.
-            When you purchase through these links, we may earn a commission at no additional cost to you.
-            We only recommend products we genuinely love and believe in.
-          </Typography>
+            <Typography
+              variant="caption"
+              color="text.secondary"
+              sx={{
+                textAlign: 'center',
+                maxWidth: '65ch',
+                lineHeight: 1.7,
+                opacity: 0.7,
+                px: 2,
+                fontSize: '0.8rem'
+              }}
+            >
+              <strong style={{ fontWeight: 600 }}>Affiliate Disclaimer:</strong> Some links on this site are affiliate links.
+              When you purchase through these links, we may earn a commission at no additional cost to you.
+              We only recommend products we genuinely love and believe in.
+            </Typography>
+          </Box>
 
           {/* Copyright - Final Line */}
           <Typography
@@ -337,7 +342,6 @@ export default function Footer() {
             sx={{
               textAlign: 'center',
               opacity: 0.6,
-              pt: 0.5,
               fontSize: '0.75rem',
               letterSpacing: '0.02em'
             }}

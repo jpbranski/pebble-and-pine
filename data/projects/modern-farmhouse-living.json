@@ -25,11 +25,6 @@
       "path": "/pdfs/placeholders/farmhouse-living-ff&e.pdf"
     }
   ],
-  "links": [
-    {
-      "label": "Shop Similar Items",
-      "url": "/shop"
-    }
-  ],
+  "links": [],
   "status": "published"
 }
