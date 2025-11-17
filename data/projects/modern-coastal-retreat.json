@@ -1,0 +1,35 @@
+{
+  "title": "Modern Coastal Retreat",
+  "location": "Malibu, California",
+  "year": "2024",
+  "category": "Residential",
+  "shortDescription": "A serene beachfront home blending minimalist design with natural coastal elements.",
+  "longDescription": "This stunning coastal retreat marries contemporary minimalism with organic textures inspired by the Pacific shoreline. Every design choice—from the driftwood-inspired fixtures to the sand-hued textile palette—celebrates the home's relationship with the ocean. Floor-to-ceiling windows frame ever-changing seascapes, while carefully curated furnishings in linen, rattan, and reclaimed wood create warmth without competing with the views. The result is a sanctuary that feels both luxurious and effortlessly relaxed, where the boundary between indoors and outdoors dissolves into tranquil harmony.",
+  "tags": ["Coastal", "Minimalist", "Residential", "Luxury", "Natural Materials"],
+  "hero": {
+    "useDoubleHero": true,
+    "foreground": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0",
+    "background": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c"
+  },
+  "gallery": [
+    "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0",
+    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+    "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea",
+    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace",
+    "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6"
+  ],
+  "pdfs": [
+    {
+      "label": "Download Concept Renders",
+      "path": "/pdfs/placeholders/coastal-retreat-renders.pdf"
+    }
+  ],
+  "links": [
+    {
+      "label": "View Full Moodboard",
+      "url": "https://www.pinterest.com/example/coastal-retreat"
+    }
+  ],
+  "status": "published"
+}

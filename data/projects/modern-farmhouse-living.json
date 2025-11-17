@@ -1,0 +1,35 @@
+{
+  "title": "Modern Farmhouse Living Room",
+  "location": "Austin, Texas",
+  "year": "2024",
+  "category": "Residential",
+  "shortDescription": "Classic farmhouse charm updated with contemporary sensibilities and a neutral palette.",
+  "longDescription": "This living room strikes the perfect balance between farmhouse warmth and modern sophistication. Shiplap accent walls painted in soft white provide textural interest without overwhelming the space, while original wood beams overhead add architectural character. The furniture plan centers around a deep, comfortable sectional in natural linen, styled with layers of throw pillows and a chunky knit blanket for inviting coziness. A reclaimed wood coffee table and vintage-inspired lighting fixtures nod to farmhouse tradition, while clean-lined side tables and a contemporary area rug keep the aesthetic current. Large windows dressed in simple linen drapes flood the room with Texas sunshine, and carefully chosen accessories—antique books, ceramic vases, and woven baskets—add personality without clutter. The space feels collected over time rather than decorated all at once, creating an authentic, lived-in charm.",
+  "tags": ["Modern Farmhouse", "Living Room", "Shiplap", "Neutral", "Cozy"],
+  "hero": {
+    "useDoubleHero": true,
+    "foreground": "https://images.unsplash.com/photo-1600585154526-990dced4db0d",
+    "background": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d"
+  },
+  "gallery": [
+    "https://images.unsplash.com/photo-1600585154526-990dced4db0d",
+    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d",
+    "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea",
+    "https://images.unsplash.com/photo-1615873968403-89e068629265",
+    "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace",
+    "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0"
+  ],
+  "pdfs": [
+    {
+      "label": "Furniture & Fixtures List",
+      "path": "/pdfs/placeholders/farmhouse-living-ff&e.pdf"
+    }
+  ],
+  "links": [
+    {
+      "label": "Shop Similar Items",
+      "url": "/shop"
+    }
+  ],
+  "status": "published"
+}

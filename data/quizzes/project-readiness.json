@@ -1,0 +1,182 @@
+{
+  "title": "Project Readiness Checklist",
+  "description": "Assess your readiness and clarify your vision for your design project",
+  "type": "project-readiness",
+  "sections": [
+    {
+      "title": "Part 1: Preparation",
+      "description": "Let's assess where you are in your design journey",
+      "questions": [
+        {
+          "id": 1,
+          "type": "checkbox",
+          "question": "I have a clear budget range in mind for this project",
+          "category": "preparation"
+        },
+        {
+          "id": 2,
+          "type": "checkbox",
+          "question": "I know my ideal timeline for completion",
+          "category": "preparation"
+        },
+        {
+          "id": 3,
+          "type": "checkbox",
+          "question": "I have examples or inspiration images of styles I love",
+          "category": "preparation"
+        },
+        {
+          "id": 4,
+          "type": "checkbox",
+          "question": "I understand what I don't like in my current space",
+          "category": "preparation"
+        },
+        {
+          "id": 5,
+          "type": "checkbox",
+          "question": "All decision-makers are on board with moving forward",
+          "category": "preparation"
+        }
+      ]
+    },
+    {
+      "title": "Part 2: Project Scope",
+      "description": "Help me understand the details of your project",
+      "questions": [
+        {
+          "id": 6,
+          "type": "radio",
+          "question": "What type of space are you designing?",
+          "options": [
+            "Single room",
+            "Multiple rooms",
+            "Entire home",
+            "Commercial space"
+          ],
+          "required": true,
+          "category": "scope"
+        },
+        {
+          "id": 7,
+          "type": "radio",
+          "question": "What's your estimated budget range?",
+          "options": [
+            "Under $10,000",
+            "$10,000 - $25,000",
+            "$25,000 - $50,000",
+            "$50,000 - $100,000",
+            "Over $100,000",
+            "Not sure yet"
+          ],
+          "required": true,
+          "category": "scope"
+        },
+        {
+          "id": 8,
+          "type": "radio",
+          "question": "What's your ideal timeline?",
+          "options": [
+            "1-3 months",
+            "3-6 months",
+            "6-12 months",
+            "12+ months",
+            "Flexible"
+          ],
+          "required": true,
+          "category": "scope"
+        },
+        {
+          "id": 9,
+          "type": "checkbox-multiple",
+          "question": "What services are you interested in? (Select all that apply)",
+          "options": [
+            "Full-service interior design",
+            "Space planning & layout",
+            "Material & finish selection",
+            "Furniture selection & sourcing",
+            "Custom millwork design",
+            "Styling & accessorizing",
+            "Virtual consultation only"
+          ],
+          "category": "scope"
+        },
+        {
+          "id": 10,
+          "type": "checkbox",
+          "question": "This project involves structural changes or renovation",
+          "category": "scope"
+        },
+        {
+          "id": 11,
+          "type": "checkbox",
+          "question": "I'm working with an architect or contractor",
+          "category": "scope"
+        },
+        {
+          "id": 12,
+          "type": "textarea",
+          "question": "What are your top 3 priorities for this space?",
+          "placeholder": "Example: More natural light, better storage, family-friendly durability...",
+          "category": "scope"
+        },
+        {
+          "id": 13,
+          "type": "textarea",
+          "question": "What challenges does your current space have?",
+          "placeholder": "Example: Awkward layout, lack of storage, poor lighting...",
+          "category": "scope"
+        },
+        {
+          "id": 14,
+          "type": "textarea",
+          "question": "Is there anything else you'd like me to know about your project?",
+          "placeholder": "Share any additional details, concerns, or questions...",
+          "category": "scope"
+        }
+      ]
+    },
+    {
+      "title": "Part 3: Your Information",
+      "description": "Let's connect about your project",
+      "questions": [
+        {
+          "id": 15,
+          "type": "text",
+          "question": "Your name",
+          "placeholder": "First and last name",
+          "required": true,
+          "category": "contact"
+        },
+        {
+          "id": 16,
+          "type": "email",
+          "question": "Email address",
+          "placeholder": "your@email.com",
+          "required": true,
+          "category": "contact"
+        },
+        {
+          "id": 17,
+          "type": "tel",
+          "question": "Phone number",
+          "placeholder": "(555) 123-4567",
+          "required": false,
+          "category": "contact"
+        }
+      ]
+    }
+  ],
+  "summaryMessage": "Thank you for taking the time to complete this checklist! Your responses help me understand your vision and ensure we're a great fit. I'll review your information and be in touch soon.",
+  "nextSteps": [
+    {
+      "label": "Schedule a Call",
+      "href": "/contact",
+      "primary": true
+    },
+    {
+      "label": "Learn About My Process",
+      "href": "/about",
+      "primary": false
+    }
+  ]
+}

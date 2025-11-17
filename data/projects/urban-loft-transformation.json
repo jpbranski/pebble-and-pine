@@ -1,0 +1,34 @@
+{
+  "title": "Urban Loft Transformation",
+  "location": "Brooklyn, New York",
+  "year": "2023",
+  "category": "Residential",
+  "shortDescription": "Industrial heritage meets refined modern living in this thoughtfully renovated loft space.",
+  "longDescription": "This Brooklyn loft honors its industrial past while embracing contemporary sophistication. Exposed brick and original steel beams provide character and history, complemented by clean-lined furnishings in warm neutrals and deep charcoal accents. Custom millwork maximizes the open floor plan, creating distinct zones without sacrificing the dramatic sense of volume. Brass fixtures and leather details add warmth to the urban palette, while abundant natural light from oversized windows brings softness to the concrete and steel. The transformation balances raw authenticity with polished comfort, resulting in a space that feels both gritty and refined.",
+  "tags": ["Industrial", "Urban", "Loft", "Modern", "Exposed Brick"],
+  "hero": {
+    "useDoubleHero": true,
+    "foreground": "https://images.unsplash.com/photo-1600607687644-c7171b42498b",
+    "background": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d"
+  },
+  "gallery": [
+    "https://images.unsplash.com/photo-1600607687644-c7171b42498b",
+    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d",
+    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
+    "https://images.unsplash.com/photo-1615873968403-89e068629265",
+    "https://images.unsplash.com/photo-1615874694520-474822394e73"
+  ],
+  "pdfs": [
+    {
+      "label": "Download Space Plans",
+      "path": "/pdfs/placeholders/urban-loft-plans.pdf"
+    },
+    {
+      "label": "Material Selections",
+      "path": "/pdfs/placeholders/urban-loft-materials.pdf"
+    }
+  ],
+  "links": [],
+  "status": "published"
+}

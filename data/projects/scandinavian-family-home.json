@@ -1,0 +1,36 @@
+{
+  "title": "Scandinavian Family Home",
+  "location": "Seattle, Washington",
+  "year": "2023",
+  "category": "Residential",
+  "shortDescription": "Light-filled interiors celebrating simplicity, functionality, and timeless Scandinavian design principles.",
+  "longDescription": "This family home embodies the core tenets of Scandinavian design: simplicity, functionality, and beauty. White oak floors and pale walls maximize natural light, creating bright, airy spaces that feel larger than their footprint. The furniture selection prioritizes clean lines and quality craftsmanship, with iconic pieces from Danish and Swedish designers anchoring each room. Textiles in soft grays and warm whites add layers of comfort, while carefully edited accessories—handmade ceramics, woven baskets, and minimal artwork—provide personality without clutter. Family-friendly durability meets sophisticated aesthetics throughout, proving that homes designed for real life can be both practical and beautiful. The result is a serene environment that supports the rhythms of daily family life while maintaining a sense of calm.",
+  "tags": ["Scandinavian", "Family Home", "Minimalist", "Light-Filled", "Functional"],
+  "hero": {
+    "useDoubleHero": true,
+    "foreground": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+    "background": "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099"
+  },
+  "gallery": [
+    "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+    "https://images.unsplash.com/photo-1600585154363-67eb9e2e2099",
+    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
+    "https://images.unsplash.com/photo-1615874694520-474822394e73",
+    "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0",
+    "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace",
+    "https://images.unsplash.com/photo-1615873968403-89e068629265"
+  ],
+  "pdfs": [
+    {
+      "label": "Download Floor Plans",
+      "path": "/pdfs/placeholders/scandinavian-home-plans.pdf"
+    }
+  ],
+  "links": [
+    {
+      "label": "Design Philosophy",
+      "url": "/about"
+    }
+  ],
+  "status": "published"
+}
