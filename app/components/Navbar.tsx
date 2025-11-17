@@ -152,16 +152,18 @@ export default function Navbar() {
               {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
             </IconButton>
 
-            {/* Settings Icon (DEV CMS) */}
-            <IconButton
-              component={Link}
-              href="/dev-cms"
-              color="inherit"
-              aria-label="developer settings"
-              sx={{ ml: 1, display: { xs: 'none', md: 'inline-flex' } }}
-            >
-              <SettingsIcon />
-            </IconButton>
+            {/* Settings Icon (DEV CMS) - Only visible in development */}
+            {process.env.NEXT_PUBLIC_ENABLE_DEV_CMS === 'true' && (
+              <IconButton
+                component={Link}
+                href="/dev-cms"
+                color="inherit"
+                aria-label="developer settings"
+                sx={{ ml: 1, display: { xs: 'none', md: 'inline-flex' } }}
+              >
+                <SettingsIcon />
+              </IconButton>
+            )}
 
             {/* Mobile Menu Icon */}
             <IconButton
