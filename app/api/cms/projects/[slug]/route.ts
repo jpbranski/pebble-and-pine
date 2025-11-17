@@ -14,7 +14,7 @@ const PROJECTS_DIR = path.join(process.cwd(), 'data', 'projects');
  */
 export async function GET(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
     // Check if running in development
@@ -25,7 +25,7 @@ export async function GET(
       );
     }
 
-    const { slug } = params;
+    const { slug } = await params;
     const filePath = path.join(PROJECTS_DIR, `${slug}.json`);
 
     if (!existsSync(filePath)) {
@@ -51,7 +51,7 @@ export async function GET(
  */
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
     // Check if running in development
@@ -62,7 +62,7 @@ export async function PUT(
       );
     }
 
-    const { slug } = params;
+    const { slug } = await params;
     const body = await request.json();
     const { slug: newSlug, ...projectData } = body;
 
@@ -137,7 +137,7 @@ export async function PUT(
  */
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { slug: string } }
+  { params }: { params: Promise<{ slug: string }> }
 ) {
   try {
     // Check if running in development
@@ -148,7 +148,7 @@ export async function DELETE(
       );
     }
 
-    const { slug } = params;
+    const { slug } = await params;
     const filePath = path.join(PROJECTS_DIR, `${slug}.json`);
 
     if (!existsSync(filePath)) {
