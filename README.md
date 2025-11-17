@@ -10,7 +10,6 @@ A production-quality Next.js 16 website showcasing the interior design portfolio
 - **Complete Theme System**: Light/dark mode with WCAG-compliant color palettes
 - **Interactive Quizzes**: Three design quizzes with PDF export functionality
 - **Portfolio System**: Dynamic project pages with dual-hero layouts and galleries
-- **Shop Integration**: Curated affiliate product showcase
 - **Dev CMS**: Local-only content management system
 - **Full Accessibility**: WCAG compliant, keyboard navigable, print-friendly
 
@@ -49,7 +48,6 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 /data
   /projects/         # Project JSON files
   /quizzes/          # Quiz configuration files
-  shop.json          # Shop items data
 
 /public             # Static assets
 ```
@@ -68,7 +66,6 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 - **Home** (`/`): Moodboard, introduction, quiz previews, portfolio highlights
 - **About** (`/about`): Katrina's biography, philosophy, experience
 - **Projects** (`/projects`): Portfolio grid and detail pages
-- **Shop** (`/shop`): Curated affiliate products
 - **Services** (`/services`): Design service offerings (hidden from nav)
 - **Contact** (`/contact`): Contact form with quiz CTAs
 
@@ -87,8 +84,7 @@ Access the local CMS at [http://localhost:3000/dev-cms](http://localhost:3000/de
 
 Features:
 - Edit project metadata and content
-- Manage shop items
-- Add new projects/products
+- Add new projects
 - **Note**: Changes are stored in memory only (not persisted to files)
 
 ## 🔧 Configuration
@@ -152,7 +148,6 @@ Key components in `/app/components/`:
 - `GalleryGrid.tsx`: Masonry image gallery
 - `ImageSlideshow.tsx`: Keyboard-accessible slideshow
 - `QuizCard.tsx`: Quiz preview card
-- `AffiliateProductCard.tsx`: Shop product card
 - `PdfDownloadButton.tsx`: PDF download handler
 
 ## 🎯 Design Philosophy

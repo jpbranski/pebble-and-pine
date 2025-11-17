@@ -39,7 +39,6 @@ import botanicalBedroom from '@/data/projects/botanical-inspired-bedroom.json';
 import scandinavianHome from '@/data/projects/scandinavian-family-home.json';
 import tuscanKitchen from '@/data/projects/tuscan-inspired-kitchen.json';
 import farmhouseLiving from '@/data/projects/modern-farmhouse-living.json';
-import shopData from '@/data/shop.json';
 
 const initialProjects = [
   { slug: 'modern-coastal-retreat', ...coastalRetreat },
@@ -60,11 +59,6 @@ export default function DevCMSPage() {
   const [projects, setProjects] = React.useState(initialProjects);
   const [editingProject, setEditingProject] = React.useState<any>(null);
   const [projectDialogOpen, setProjectDialogOpen] = React.useState(false);
-
-  // Shop state
-  const [shopItems, setShopItems] = React.useState(shopData.items);
-  const [editingShopItem, setEditingShopItem] = React.useState<any>(null);
-  const [shopDialogOpen, setShopDialogOpen] = React.useState(false);
 
   const [saveMessage, setSaveMessage] = React.useState('');
 
@@ -146,55 +140,6 @@ export default function DevCMSPage() {
     }
   };
 
-  const handleEditShopItem = (item: any, index: number) => {
-    setEditingShopItem({ ...item, index });
-    setShopDialogOpen(true);
-  };
-
-  const handleNewShopItem = () => {
-    setEditingShopItem({
-      title: '',
-      image: '',
-      description: '',
-      externalLink: '',
-      affiliateType: 'none',
-      nonAffiliate: false,
-      category: 'Décor',
-      isFeatured: false,
-      price: null,
-      index: -1,
-    });
-    setShopDialogOpen(true);
-  };
-
-  const handleSaveShopItem = () => {
-    if (!editingShopItem.title) {
-      alert('Title is required');
-      return;
-    }
-
-    const { index, ...item } = editingShopItem;
-    if (index >= 0) {
-      const updated = [...shopItems];
-      updated[index] = item;
-      setShopItems(updated);
-    } else {
-      setShopItems([...shopItems, item]);
-    }
-
-    setSaveMessage(`Shop item "${editingShopItem.title}" saved! (Note: Changes are only in memory)`);
-    setShopDialogOpen(false);
-    setTimeout(() => setSaveMessage(''), 5000);
-  };
-
-  const handleDeleteShopItem = (index: number) => {
-    if (confirm('Are you sure you want to delete this shop item?')) {
-      setShopItems(shopItems.filter((_, i) => i !== index));
-      setSaveMessage('Shop item deleted (in memory only)');
-      setTimeout(() => setSaveMessage(''), 5000);
-    }
-  };
-
   if (!authenticated) {
     return (
       <Container maxWidth="sm" sx={{ py: 10 }}>
@@ -242,7 +187,7 @@ export default function DevCMSPage() {
         Dev CMS
       </Typography>
       <Typography variant="body2" color="text.secondary" gutterBottom>
-        Local development CMS for managing projects and shop items
+        Local development CMS for managing projects
       </Typography>
 
       {saveMessage && (
@@ -259,7 +204,6 @@ export default function DevCMSPage() {
       <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 3 }}>
         <Tabs value={tab} onChange={(_, newValue) => setTab(newValue)}>
           <Tab label="Projects" />
-          <Tab label="Shop Items" />
         </Tabs>
       </Box>
 
@@ -298,50 +242,6 @@ export default function DevCMSPage() {
                         <EditIcon />
                       </IconButton>
                       <IconButton size="small" onClick={() => handleDeleteProject(project.slug)}>
-                        <DeleteIcon />
-                      </IconButton>
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </Box>
-      )}
-
-      {/* Shop Items Tab */}
-      {tab === 1 && (
-        <Box>
-          <Box sx={{ mb: 3, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <Typography variant="h5">Shop Items ({shopItems.length})</Typography>
-            <Button variant="contained" startIcon={<AddIcon />} onClick={handleNewShopItem}>
-              New Shop Item
-            </Button>
-          </Box>
-
-          <TableContainer component={Paper}>
-            <Table>
-              <TableHead>
-                <TableRow>
-                  <TableCell>Title</TableCell>
-                  <TableCell>Category</TableCell>
-                  <TableCell>Price</TableCell>
-                  <TableCell>Featured</TableCell>
-                  <TableCell align="right">Actions</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {shopItems.map((item, index) => (
-                  <TableRow key={index}>
-                    <TableCell>{item.title}</TableCell>
-                    <TableCell>{item.category}</TableCell>
-                    <TableCell>{item.price || 'N/A'}</TableCell>
-                    <TableCell>{item.isFeatured ? '⭐' : ''}</TableCell>
-                    <TableCell align="right">
-                      <IconButton size="small" onClick={() => handleEditShopItem(item, index)}>
-                        <EditIcon />
-                      </IconButton>
-                      <IconButton size="small" onClick={() => handleDeleteShopItem(index)}>
                         <DeleteIcon />
                       </IconButton>
                     </TableCell>
@@ -452,83 +352,6 @@ export default function DevCMSPage() {
         <DialogActions>
           <Button onClick={() => setProjectDialogOpen(false)}>Cancel</Button>
           <Button onClick={handleSaveProject} variant="contained" startIcon={<SaveIcon />}>
-            Save
-          </Button>
-        </DialogActions>
-      </Dialog>
-
-      {/* Shop Item Edit Dialog */}
-      <Dialog open={shopDialogOpen} onClose={() => setShopDialogOpen(false)} maxWidth="sm" fullWidth>
-        <DialogTitle>
-          {editingShopItem?.index >= 0 ? `Edit Shop Item` : 'New Shop Item'}
-        </DialogTitle>
-        <DialogContent>
-          <Stack spacing={2} sx={{ mt: 1 }}>
-            <TextField
-              label="Title"
-              value={editingShopItem?.title || ''}
-              onChange={(e) => setEditingShopItem({ ...editingShopItem, title: e.target.value })}
-              fullWidth
-              required
-            />
-            <TextField
-              label="Image URL"
-              value={editingShopItem?.image || ''}
-              onChange={(e) => setEditingShopItem({ ...editingShopItem, image: e.target.value })}
-              fullWidth
-            />
-            <TextField
-              label="Description"
-              value={editingShopItem?.description || ''}
-              onChange={(e) => setEditingShopItem({ ...editingShopItem, description: e.target.value })}
-              fullWidth
-              multiline
-              rows={3}
-            />
-            <TextField
-              label="External Link"
-              value={editingShopItem?.externalLink || ''}
-              onChange={(e) => setEditingShopItem({ ...editingShopItem, externalLink: e.target.value })}
-              fullWidth
-            />
-            <TextField
-              label="Category"
-              value={editingShopItem?.category || ''}
-              onChange={(e) => setEditingShopItem({ ...editingShopItem, category: e.target.value })}
-              fullWidth
-            />
-            <TextField
-              label="Price (optional)"
-              value={editingShopItem?.price || ''}
-              onChange={(e) => setEditingShopItem({ ...editingShopItem, price: e.target.value })}
-              fullWidth
-            />
-            <TextField
-              select
-              label="Affiliate Type"
-              value={editingShopItem?.affiliateType || 'none'}
-              onChange={(e) => setEditingShopItem({ ...editingShopItem, affiliateType: e.target.value })}
-              fullWidth
-              SelectProps={{ native: true }}
-            >
-              <option value="none">None</option>
-              <option value="amazon">Amazon</option>
-              <option value="rewardstyle">RewardStyle</option>
-            </TextField>
-            <FormControlLabel
-              control={
-                <Switch
-                  checked={editingShopItem?.isFeatured || false}
-                  onChange={(e) => setEditingShopItem({ ...editingShopItem, isFeatured: e.target.checked })}
-                />
-              }
-              label="Featured"
-            />
-          </Stack>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={() => setShopDialogOpen(false)}>Cancel</Button>
-          <Button onClick={handleSaveShopItem} variant="contained" startIcon={<SaveIcon />}>
             Save
           </Button>
         </DialogActions>
