@@ -293,6 +293,7 @@ export default function ProjectReadinessPage() {
               }
 
               if (q.type === 'radio') {
+                const options = (q as any).options as string[];
                 return (
                   <FormControl key={q.id} required={q.required}>
                     <FormLabel>{q.question}</FormLabel>
@@ -300,7 +301,7 @@ export default function ProjectReadinessPage() {
                       value={answers[q.id] || ''}
                       onChange={(e) => handleChange(q.id, e.target.value)}
                     >
-                      {q.options?.map((option) => (
+                      {options?.map((option) => (
                         <FormControlLabel
                           key={option}
                           value={option}
@@ -314,11 +315,12 @@ export default function ProjectReadinessPage() {
               }
 
               if (q.type === 'checkbox-multiple') {
+                const options = (q as any).options as string[];
                 return (
                   <FormControl key={q.id}>
                     <FormLabel>{q.question}</FormLabel>
                     <FormGroup>
-                      {q.options?.map((option) => (
+                      {options?.map((option) => (
                         <FormControlLabel
                           key={option}
                           control={
