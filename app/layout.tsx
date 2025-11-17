@@ -3,6 +3,8 @@ import './globals.css';
 import ThemeRegistry from './theme/ThemeRegistry';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import CookieConsent from './components/CookieConsent';
+import GoogleAnalytics from './components/GoogleAnalytics';
 import { Box } from '@mui/material';
 
 export const metadata: Metadata = {
@@ -68,29 +70,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        {/* Google Analytics */}
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <>
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
-                `,
-              }}
-            />
-          </>
-        )}
-      </head>
       <body>
         <ThemeRegistry>
+          {/* Conditional Google Analytics - only loads with consent */}
+          <GoogleAnalytics />
+
           <Box
             sx={{
               display: 'flex',
@@ -104,6 +88,9 @@ export default function RootLayout({
             </Box>
             <Footer />
           </Box>
+
+          {/* Cookie Consent Banner */}
+          <CookieConsent />
         </ThemeRegistry>
       </body>
     </html>
