@@ -1,6 +1,6 @@
 import { Container, Box, Typography, Grid, Button, Stack } from '@mui/material';
 import Link from 'next/link';
-import Moodboard from '../components/Moodboard';
+import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard';
 import QuizCard from '../components/QuizCard';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
@@ -30,75 +30,8 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero Section with Moodboard */}
-      <Box
-        sx={{
-          position: 'relative',
-          overflow: 'hidden',
-          bgcolor: 'background.default',
-        }}
-      >
-        <Moodboard />
-        <Container maxWidth="lg">
-          <Box
-            sx={{
-              position: 'relative',
-              zIndex: 1,
-              py: { xs: 6, md: 8 },
-              textAlign: 'center',
-            }}
-          >
-            <Typography
-              variant="h1"
-              component="h1"
-              gutterBottom
-              sx={{
-                fontSize: { xs: '2.5rem', sm: '3rem', md: '3.5rem' },
-                fontWeight: 300,
-                mb: 2,
-              }}
-            >
-              Pebble & Pine Design
-            </Typography>
-            <Typography
-              variant="h5"
-              color="text.secondary"
-              sx={{
-                maxWidth: 700,
-                mx: 'auto',
-                mb: 4,
-                fontWeight: 300,
-                fontSize: { xs: '1.1rem', md: '1.3rem' },
-              }}
-            >
-              Elegant, thoughtful interior design that transforms your space into a reflection of your unique style
-            </Typography>
-            <Stack
-              direction={{ xs: 'column', sm: 'row' }}
-              spacing={2}
-              justifyContent="center"
-            >
-              <Button
-                component={Link}
-                href="/projects"
-                variant="contained"
-                size="large"
-                endIcon={<ArrowForwardIcon />}
-              >
-                View Portfolio
-              </Button>
-              <Button
-                component={Link}
-                href="/contact"
-                variant="outlined"
-                size="large"
-              >
-                Get In Touch
-              </Button>
-            </Stack>
-          </Box>
-        </Container>
-      </Box>
+      {/* Hero Section */}
+      <Hero />
 
       {/* Introduction to Katrina Lohr */}
       <Box sx={{ py: { xs: 8, md: 12 }, bgcolor: 'background.paper' }}>

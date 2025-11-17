@@ -21,6 +21,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import SettingsIcon from '@mui/icons-material/Settings';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Logo from './Logo';
@@ -150,6 +151,17 @@ export default function Navbar() {
               sx={{ ml: 'auto' }}
             >
               {mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
+            </IconButton>
+
+            {/* Settings Icon (DEV CMS) */}
+            <IconButton
+              component={Link}
+              href="/dev-cms"
+              color="inherit"
+              aria-label="developer settings"
+              sx={{ ml: 1, display: { xs: 'none', md: 'inline-flex' } }}
+            >
+              <SettingsIcon />
             </IconButton>
 
             {/* Mobile Menu Icon */}
