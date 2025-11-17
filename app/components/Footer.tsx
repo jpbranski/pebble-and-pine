@@ -25,17 +25,17 @@ export default function Footer() {
     >
       <Container maxWidth="lg">
         <Stack spacing={5}>
-          {/* Logo and Tagline - Left Aligned on Desktop */}
+          {/* Logo and Tagline - Centered */}
           <Box
             sx={{
-              textAlign: { xs: 'center', md: 'left' },
+              textAlign: 'center',
               mb: 2
             }}
           >
             <Box
               sx={{
                 display: 'flex',
-                justifyContent: { xs: 'center', md: 'flex-start' },
+                justifyContent: 'center',
                 mb: 1.5
               }}
             >
@@ -69,13 +69,13 @@ export default function Footer() {
           {/* Divider */}
           <Divider sx={{ opacity: 0.12 }} />
 
-          {/* Three Column Layout */}
+          {/* Three Column Layout - Centered */}
           <Grid
             container
             spacing={{ xs: 4, md: 6 }}
             sx={{
               maxWidth: 1000,
-              mx: { xs: 'auto', md: 0 }
+              mx: 'auto'
             }}
           >
             {/* Column 1: Navigation */}
@@ -87,7 +87,7 @@ export default function Footer() {
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
                   mb: 2,
-                  textAlign: { xs: 'center', sm: 'left' },
+                  textAlign: 'center',
                   color: 'text.primary',
                   fontSize: '0.8rem'
                 }}
@@ -97,7 +97,7 @@ export default function Footer() {
               <Stack
                 spacing={1.25}
                 sx={{
-                  alignItems: { xs: 'center', sm: 'flex-start' },
+                  alignItems: 'center',
                   '& a': {
                     color: 'text.secondary',
                     textDecoration: 'none',
@@ -134,7 +134,7 @@ export default function Footer() {
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
                   mb: 2,
-                  textAlign: { xs: 'center', sm: 'left' },
+                  textAlign: 'center',
                   color: 'text.primary',
                   fontSize: '0.8rem'
                 }}
@@ -144,7 +144,7 @@ export default function Footer() {
               <Stack
                 spacing={2.5}
                 sx={{
-                  alignItems: { xs: 'center', sm: 'flex-start' }
+                  alignItems: 'center'
                 }}
               >
                 {/* Social Media Icons */}
@@ -226,7 +226,7 @@ export default function Footer() {
                   letterSpacing: '0.08em',
                   textTransform: 'uppercase',
                   mb: 2,
-                  textAlign: { xs: 'center', sm: 'left' },
+                  textAlign: 'center',
                   color: 'text.primary',
                   fontSize: '0.8rem'
                 }}
@@ -236,7 +236,7 @@ export default function Footer() {
               <Stack
                 spacing={1.25}
                 sx={{
-                  alignItems: { xs: 'center', sm: 'flex-start' },
+                  alignItems: 'center',
                   '& a': {
                     color: 'text.secondary',
                     textDecoration: 'none',
