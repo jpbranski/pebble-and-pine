@@ -24,12 +24,12 @@ export default function Footer() {
       }}
     >
       <Container maxWidth="lg">
-        <Stack spacing={5}>
+        <Stack spacing={7}>
           {/* Logo and Tagline - Centered */}
           <Box
             sx={{
               textAlign: 'center',
-              mb: 2
+              mb: 4
             }}
           >
             <Box
@@ -72,14 +72,33 @@ export default function Footer() {
           {/* Three Column Layout - Centered */}
           <Grid
             container
-            spacing={{ xs: 4, md: 6 }}
+            spacing={{ xs: 4, md: 10 }}
             sx={{
-              maxWidth: 1000,
+              maxWidth: 1100,
               mx: 'auto'
             }}
           >
             {/* Column 1: Navigation */}
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              sx={{
+                position: 'relative',
+                '&::after': {
+                  content: '""',
+                  position: 'absolute',
+                  right: 0,
+                  top: '10%',
+                  bottom: '10%',
+                  width: '1px',
+                  bgcolor: 'divider',
+                  opacity: 0.15,
+                  display: { xs: 'none', md: 'block' }
+                }
+              }}
+            >
               <Typography
                 variant="subtitle2"
                 sx={{
@@ -126,7 +145,26 @@ export default function Footer() {
             </Grid>
 
             {/* Column 2: Social & Contact */}
-            <Grid item xs={12} sm={6} md={4}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              sx={{
+                position: 'relative',
+                '&::after': {
+                  content: '""',
+                  position: 'absolute',
+                  right: 0,
+                  top: '10%',
+                  bottom: '10%',
+                  width: '1px',
+                  bgcolor: 'divider',
+                  opacity: 0.15,
+                  display: { xs: 'none', md: 'block' }
+                }
+              }}
+            >
               <Typography
                 variant="subtitle2"
                 sx={{
@@ -269,7 +307,7 @@ export default function Footer() {
           </Grid>
 
           {/* Divider before bottom section */}
-          <Divider sx={{ opacity: 0.08, mt: 4 }} />
+          <Divider sx={{ opacity: 0.08, mt: 6 }} />
 
           {/* Affiliate Disclaimer - Bottom Section */}
           <Typography
@@ -279,8 +317,8 @@ export default function Footer() {
               textAlign: 'center',
               maxWidth: '65ch',
               mx: 'auto',
-              mt: '1.5rem !important',
-              mb: '0.5rem !important',
+              mt: '3rem !important',
+              mb: '2rem !important',
               lineHeight: 1.7,
               opacity: 0.7,
               px: 2,
