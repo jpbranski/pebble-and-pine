@@ -1,0 +1,54 @@
+{
+  "title": "Design Vibe Check",
+  "description": "A quick check-in to understand your design needs and preferences",
+  "type": "lead-in",
+  "questions": [
+    {
+      "id": 1,
+      "type": "dropdown",
+      "question": "Which room are you most interested in designing?",
+      "options": [
+        "Living Room",
+        "Bedroom",
+        "Kitchen",
+        "Bathroom",
+        "Home Office",
+        "Dining Room",
+        "Outdoor Space",
+        "Multiple Rooms",
+        "Entire Home"
+      ],
+      "required": true
+    },
+    {
+      "id": 2,
+      "type": "radio",
+      "question": "How do you prefer to communicate during a design project?",
+      "options": [
+        "Email - I like detailed written communication",
+        "Phone/Video - I prefer real-time conversations",
+        "In-Person - I want to meet face-to-face",
+        "Mix - I'm flexible with communication methods"
+      ],
+      "required": true
+    },
+    {
+      "id": 3,
+      "type": "email",
+      "question": "What's your email address?",
+      "placeholder": "your@email.com",
+      "required": true
+    }
+  ],
+  "thankYouMessage": "Thank you for sharing! Based on your responses, I'd love to learn more about your project. Check out the Project Readiness Checklist to help organize your thoughts, or reach out directly to schedule a consultation.",
+  "nextSteps": [
+    {
+      "label": "Take Project Readiness Quiz",
+      "href": "/quizzes/project-readiness"
+    },
+    {
+      "label": "Contact Me Directly",
+      "href": "/contact"
+    }
+  ]
+}

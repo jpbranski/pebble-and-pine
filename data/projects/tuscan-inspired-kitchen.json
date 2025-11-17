@@ -1,0 +1,33 @@
+{
+  "title": "Tuscan-Inspired Kitchen Renovation",
+  "location": "Napa Valley, California",
+  "year": "2023",
+  "category": "Residential",
+  "shortDescription": "A warm, inviting kitchen renovation drawing inspiration from rustic Italian farmhouses.",
+  "longDescription": "This kitchen renovation transports homeowners to the sun-drenched countryside of Tuscany without leaving California wine country. Terracotta floor tiles and plaster-finished walls in warm cream create an authentic Mediterranean foundation, while custom cabinetry in aged oak brings rustic charm and ample storage. A dramatic range hood clad in hand-painted tiles serves as the focal point, complemented by open shelving that displays beautiful ceramics and glassware. Brass fixtures and wrought iron accents add old-world character, while modern appliances are seamlessly integrated to ensure contemporary functionality. The large center island topped with honed marble provides both workspace and gathering spot, making this kitchen the heart of the home—perfect for long meals with family and friends, just as it would be in rural Italy.",
+  "tags": ["Kitchen", "Tuscan", "Mediterranean", "Renovation", "Traditional"],
+  "hero": {
+    "useDoubleHero": false,
+    "foreground": "https://images.unsplash.com/photo-1556911220-bff31c812dba",
+    "background": ""
+  },
+  "gallery": [
+    "https://images.unsplash.com/photo-1556911220-bff31c812dba",
+    "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136",
+    "https://images.unsplash.com/photo-1556912167-f556f1f39faa",
+    "https://images.unsplash.com/photo-1600585152915-d208bec867a1",
+    "https://images.unsplash.com/photo-1556909212-d5b604d0c90d"
+  ],
+  "pdfs": [
+    {
+      "label": "Before & After Comparison",
+      "path": "/pdfs/placeholders/kitchen-before-after.pdf"
+    },
+    {
+      "label": "Tile Selection Guide",
+      "path": "/pdfs/placeholders/kitchen-tiles.pdf"
+    }
+  ],
+  "links": [],
+  "status": "published"
+}

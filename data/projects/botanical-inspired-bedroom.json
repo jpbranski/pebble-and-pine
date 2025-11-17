@@ -1,0 +1,29 @@
+{
+  "title": "Botanical-Inspired Primary Suite",
+  "location": "Portland, Oregon",
+  "year": "2024",
+  "category": "Residential",
+  "shortDescription": "A nature-infused sanctuary featuring organic textures and a soothing green palette.",
+  "longDescription": "This primary suite transforms a standard bedroom into a botanical sanctuary that celebrates the healing power of nature. The design layers rich textures—linen bedding, woven grasscloth wallcovering, and a handcrafted rattan headboard—to create depth and tactile interest. A carefully curated palette of sage, moss, and cream evokes the serenity of a forest clearing, while live plants and botanical artwork reinforce the connection to the natural world. Custom window treatments in organic cotton filter light beautifully, and a cozy reading nook with a vintage velvet chair provides the perfect spot for morning coffee. Every element works together to create a restful retreat that nurtures both body and spirit.",
+  "tags": ["Bedroom", "Botanical", "Organic", "Wellness", "Nature-Inspired"],
+  "hero": {
+    "useDoubleHero": false,
+    "foreground": "https://images.unsplash.com/photo-1615876234886-fd9a39fda97f",
+    "background": ""
+  },
+  "gallery": [
+    "https://images.unsplash.com/photo-1615876234886-fd9a39fda97f",
+    "https://images.unsplash.com/photo-1616594039964-ae9021a400a0",
+    "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace",
+    "https://images.unsplash.com/photo-1615875605825-5eb9bb5d52ac",
+    "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+  ],
+  "pdfs": [],
+  "links": [
+    {
+      "label": "Shop the Look",
+      "url": "/shop"
+    }
+  ],
+  "status": "published"
+}

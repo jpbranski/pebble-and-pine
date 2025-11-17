@@ -1,0 +1,163 @@
+{
+  "title": "Aesthetic Finder Quiz",
+  "description": "Discover your unique interior design style through visual preferences",
+  "type": "aesthetic-finder",
+  "questions": [
+    {
+      "id": 1,
+      "prompt": "Which living room speaks to you?",
+      "imageA": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+      "imageB": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+      "labelA": "Bright & Minimal",
+      "labelB": "Warm & Textured",
+      "scoreA": { "minimalist": 2, "scandinavian": 1 },
+      "scoreB": { "organic": 2, "rustic": 1 }
+    },
+    {
+      "id": 2,
+      "prompt": "Choose your ideal color palette",
+      "imageA": "https://images.unsplash.com/photo-1615874694520-474822394e73",
+      "imageB": "https://images.unsplash.com/photo-1600607687644-c7171b42498b",
+      "labelA": "Soft Neutrals",
+      "labelB": "Bold & Moody",
+      "scoreA": { "minimalist": 1, "scandinavian": 2, "organic": 1 },
+      "scoreB": { "industrial": 2, "modern": 1 }
+    },
+    {
+      "id": 3,
+      "prompt": "Which bedroom feels like home?",
+      "imageA": "https://images.unsplash.com/photo-1615876234886-fd9a39fda97f",
+      "imageB": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0",
+      "labelA": "Botanical Sanctuary",
+      "labelB": "Serene Simplicity",
+      "scoreA": { "organic": 2, "bohemian": 1 },
+      "scoreB": { "minimalist": 2, "scandinavian": 1 }
+    },
+    {
+      "id": 4,
+      "prompt": "Pick your dream kitchen",
+      "imageA": "https://images.unsplash.com/photo-1556911220-bff31c812dba",
+      "imageB": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7",
+      "labelA": "Rustic Warmth",
+      "labelB": "Sleek & Modern",
+      "scoreA": { "rustic": 2, "traditional": 1 },
+      "scoreB": { "modern": 2, "minimalist": 1 }
+    },
+    {
+      "id": 5,
+      "prompt": "Choose your texture preference",
+      "imageA": "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2",
+      "imageB": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+      "labelA": "Layered & Cozy",
+      "labelB": "Clean & Smooth",
+      "scoreA": { "organic": 1, "bohemian": 2, "rustic": 1 },
+      "scoreB": { "minimalist": 2, "modern": 1 }
+    },
+    {
+      "id": 6,
+      "prompt": "Which materials draw you in?",
+      "imageA": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d",
+      "imageB": "https://images.unsplash.com/photo-1600607687644-c7171b42498b",
+      "labelA": "Natural & Organic",
+      "labelB": "Metal & Concrete",
+      "scoreA": { "organic": 2, "scandinavian": 1, "rustic": 1 },
+      "scoreB": { "industrial": 2, "modern": 1 }
+    },
+    {
+      "id": 7,
+      "prompt": "Select your ideal workspace",
+      "imageA": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace",
+      "imageB": "https://images.unsplash.com/photo-1615873968403-89e068629265",
+      "labelA": "Light & Airy",
+      "labelB": "Focused & Refined",
+      "scoreA": { "scandinavian": 2, "minimalist": 1 },
+      "scoreB": { "modern": 2, "traditional": 1 }
+    },
+    {
+      "id": 8,
+      "prompt": "Choose your seating style",
+      "imageA": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc",
+      "imageB": "https://images.unsplash.com/photo-1600585154526-990dced4db0d",
+      "labelA": "Plush & Inviting",
+      "labelB": "Structured & Classic",
+      "scoreA": { "organic": 1, "bohemian": 2 },
+      "scoreB": { "traditional": 2, "modern": 1 }
+    },
+    {
+      "id": 9,
+      "prompt": "Which lighting approach resonates?",
+      "imageA": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c",
+      "imageB": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15",
+      "labelA": "Statement Fixture",
+      "labelB": "Natural & Organic",
+      "scoreA": { "modern": 2, "industrial": 1 },
+      "scoreB": { "organic": 2, "bohemian": 1, "coastal": 1 }
+    },
+    {
+      "id": 10,
+      "prompt": "Pick your ideal outdoor connection",
+      "imageA": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0",
+      "imageB": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea",
+      "labelA": "Seamless Integration",
+      "labelB": "Cozy Retreat",
+      "scoreA": { "modern": 1, "coastal": 2, "minimalist": 1 },
+      "scoreB": { "rustic": 2, "organic": 1 }
+    }
+  ],
+  "archetypes": {
+    "minimalist": {
+      "name": "Minimalist",
+      "description": "You appreciate clean lines, uncluttered spaces, and a refined sense of calm. Your ideal home focuses on quality over quantity, with carefully curated pieces that serve both form and function.",
+      "characteristics": ["Clean lines", "Neutral palette", "Uncluttered spaces", "Quality materials"],
+      "relatedProject": "modern-coastal-retreat"
+    },
+    "scandinavian": {
+      "name": "Scandinavian",
+      "description": "Light, bright, and effortlessly functional—you love spaces that balance simplicity with warmth. Natural materials, soft textiles, and abundant natural light define your aesthetic.",
+      "characteristics": ["Light wood tones", "Functional design", "Cozy textiles", "Natural light"],
+      "relatedProject": "scandinavian-family-home"
+    },
+    "industrial": {
+      "name": "Industrial",
+      "description": "You're drawn to raw, authentic materials and spaces with history. Exposed brick, metal fixtures, and open concepts speak to your appreciation for urban, edgy design.",
+      "characteristics": ["Exposed materials", "Metal accents", "Open spaces", "Urban edge"],
+      "relatedProject": "urban-loft-transformation"
+    },
+    "organic": {
+      "name": "Organic Modern",
+      "description": "You seek harmony between contemporary design and natural elements. Soft curves, earthy tones, and botanical touches create spaces that feel both current and connected to nature.",
+      "characteristics": ["Natural materials", "Earthy tones", "Botanical elements", "Soft textures"],
+      "relatedProject": "botanical-inspired-bedroom"
+    },
+    "rustic": {
+      "name": "Rustic Charm",
+      "description": "You appreciate the warmth and character of reclaimed wood, vintage finds, and handcrafted details. Your spaces feel collected over time, with each piece telling a story.",
+      "characteristics": ["Reclaimed wood", "Vintage pieces", "Handcrafted details", "Warm tones"],
+      "relatedProject": "modern-farmhouse-living"
+    },
+    "modern": {
+      "name": "Modern Sophistication",
+      "description": "You love contemporary design with bold choices and clean aesthetics. Sleek surfaces, innovative materials, and statement pieces define your sophisticated style.",
+      "characteristics": ["Contemporary pieces", "Bold accents", "Sleek finishes", "Statement design"],
+      "relatedProject": "urban-loft-transformation"
+    },
+    "traditional": {
+      "name": "Classic Traditional",
+      "description": "You're drawn to timeless elegance and refined details. Rich woods, classic silhouettes, and well-proportioned spaces create environments that feel both formal and inviting.",
+      "characteristics": ["Classic furniture", "Rich materials", "Timeless pieces", "Refined details"],
+      "relatedProject": "tuscan-inspired-kitchen"
+    },
+    "bohemian": {
+      "name": "Bohemian Spirit",
+      "description": "You embrace eclectic, layered, and globally-inspired design. Rich textures, vibrant patterns, and personal collections create spaces full of personality and free-spirited charm.",
+      "characteristics": ["Layered textiles", "Global influences", "Rich colors", "Eclectic mix"],
+      "relatedProject": "botanical-inspired-bedroom"
+    },
+    "coastal": {
+      "name": "Coastal Calm",
+      "description": "You love the serene, breezy feel of seaside living. Natural fibers, soft blues, and organic textures create spaces that feel relaxed, fresh, and connected to the water.",
+      "characteristics": ["Light palette", "Natural fibers", "Breezy feel", "Ocean-inspired"],
+      "relatedProject": "modern-coastal-retreat"
+    }
+  }
+}
