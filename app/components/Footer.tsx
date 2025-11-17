@@ -23,10 +23,10 @@ export default function Footer() {
       }}
     >
       <Container maxWidth="lg">
-        <Stack spacing={3}>
-          {/* Logo and Tagline */}
-          <Box sx={{ textAlign: 'center', mb: 1 }}>
-            <Box sx={{ display: 'flex', justifyContent: 'center', mb: 1.5 }}>
+        <Stack spacing={2.5}>
+          {/* Logo and Tagline - reduced bottom margin */}
+          <Box sx={{ textAlign: 'center', mb: 0.5 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'center', mb: 1.25 }}>
               <Logo width={48} height={48} />
             </Box>
             <Typography variant="h6" sx={{ fontWeight: 500, mb: 0.5 }}>
@@ -37,12 +37,13 @@ export default function Footer() {
             </Typography>
           </Box>
 
-          {/* Social Links */}
+          {/* Social Links - tighter spacing */}
           <Stack
             direction="row"
             spacing={2}
             justifyContent="center"
             sx={{
+              mb: 0.5,
               '& a': {
                 color: 'text.secondary',
                 transition: 'color 0.2s',
@@ -76,40 +77,70 @@ export default function Footer() {
             </MuiLink>
           </Stack>
 
-          <Divider sx={{ my: 1 }} />
+          {/* Divider positioned directly above navigation */}
+          <Divider
+            sx={{
+              opacity: 0.1,
+              mt: '2rem !important',
+              mb: '1.5rem !important'
+            }}
+          />
 
-          {/* Footer Navigation - Two Column Layout */}
-          <Grid container spacing={3} justifyContent="center" sx={{ maxWidth: 700, mx: 'auto' }}>
+          {/* Footer Navigation - Tighter Grid Layout */}
+          <Grid
+            container
+            spacing={{ xs: 2, sm: 2.5 }}
+            justifyContent="center"
+            sx={{
+              maxWidth: 600,
+              mx: 'auto',
+              columnGap: { sm: 1 }
+            }}
+          >
             {/* Main Navigation */}
             <Grid item xs={12} sm={6}>
               <Typography
                 variant="subtitle2"
                 sx={{
                   fontWeight: 600,
-                  mb: 1.5,
+                  letterSpacing: '0.5px',
+                  mb: 1.25,
                   textAlign: { xs: 'center', sm: 'left' },
-                  color: 'text.primary'
+                  color: 'text.secondary',
+                  opacity: 0.7
                 }}
               >
                 Navigate
               </Typography>
               <Stack
-                spacing={1}
+                spacing={0.5}
                 sx={{
                   alignItems: { xs: 'center', sm: 'flex-start' },
                   '& a': {
                     color: 'text.secondary',
                     textDecoration: 'none',
-                    fontSize: '0.9rem',
-                    transition: 'color 0.2s',
-                    '&:hover': { color: 'primary.main' }
+                    fontSize: '0.875rem',
+                    transition: 'all 0.2s',
+                    '&:hover': {
+                      color: 'primary.main',
+                      textDecoration: 'underline',
+                      textUnderlineOffset: '3px'
+                    }
                   }
                 }}
               >
-                <Link href="/services">Services</Link>
-                <Link href="/projects">Portfolio</Link>
-                <Link href="/about">About</Link>
-                <Link href="/contact">Contact</Link>
+                <Link href="/services">
+                  <Typography variant="body2">Services</Typography>
+                </Link>
+                <Link href="/projects">
+                  <Typography variant="body2">Portfolio</Typography>
+                </Link>
+                <Link href="/about">
+                  <Typography variant="body2">About</Typography>
+                </Link>
+                <Link href="/contact">
+                  <Typography variant="body2">Contact</Typography>
+                </Link>
               </Stack>
             </Grid>
 
@@ -119,47 +150,63 @@ export default function Footer() {
                 variant="subtitle2"
                 sx={{
                   fontWeight: 600,
-                  mb: 1.5,
+                  letterSpacing: '0.5px',
+                  mb: 1.25,
                   textAlign: { xs: 'center', sm: 'left' },
-                  color: 'text.primary'
+                  color: 'text.secondary',
+                  opacity: 0.7
                 }}
               >
                 Legal
               </Typography>
               <Stack
-                spacing={1}
+                spacing={0.5}
                 sx={{
                   alignItems: { xs: 'center', sm: 'flex-start' },
                   '& a': {
                     color: 'text.secondary',
                     textDecoration: 'none',
-                    fontSize: '0.9rem',
-                    transition: 'color 0.2s',
-                    '&:hover': { color: 'primary.main' }
+                    fontSize: '0.875rem',
+                    transition: 'all 0.2s',
+                    '&:hover': {
+                      color: 'primary.main',
+                      textDecoration: 'underline',
+                      textUnderlineOffset: '3px'
+                    }
                   }
                 }}
               >
-                <Link href="/legal/privacy-policy">Privacy Policy</Link>
-                <Link href="/legal/terms-of-service">Terms of Service</Link>
-                <Link href="/legal/accessibility">Accessibility</Link>
-                <Link href="/legal/gdpr">GDPR</Link>
-                <Link href="/legal/ccpa">CCPA</Link>
+                <Link href="/legal/privacy-policy">
+                  <Typography variant="body2">Privacy Policy</Typography>
+                </Link>
+                <Link href="/legal/terms-of-service">
+                  <Typography variant="body2">Terms of Service</Typography>
+                </Link>
+                <Link href="/legal/accessibility">
+                  <Typography variant="body2">Accessibility</Typography>
+                </Link>
+                <Link href="/legal/gdpr">
+                  <Typography variant="body2">GDPR</Typography>
+                </Link>
+                <Link href="/legal/ccpa">
+                  <Typography variant="body2">CCPA</Typography>
+                </Link>
               </Stack>
             </Grid>
           </Grid>
 
-          <Divider sx={{ my: 1 }} />
-
-          {/* Affiliate Disclaimer */}
+          {/* Affiliate Disclaimer - refined placement and typography */}
           <Typography
             variant="caption"
             color="text.secondary"
             sx={{
               textAlign: 'center',
-              maxWidth: 650,
+              maxWidth: '60ch',
               mx: 'auto',
-              lineHeight: 1.5,
-              fontSize: '0.8rem',
+              mt: '2rem !important',
+              mb: '1rem !important',
+              lineHeight: 1.6,
+              opacity: 0.8,
               px: 2
             }}
           >
@@ -168,14 +215,15 @@ export default function Footer() {
             We only recommend products we genuinely love and believe in.
           </Typography>
 
-          {/* Copyright */}
+          {/* Copyright - minimalist final line */}
           <Typography
-            variant="body2"
+            variant="caption"
             color="text.secondary"
             sx={{
               textAlign: 'center',
-              fontSize: '0.85rem',
-              pt: 1
+              opacity: 0.65,
+              pt: 1.25,
+              fontSize: '0.75rem'
             }}
           >
             © {currentYear} Pebble & Pine Design. All rights reserved. | Design by Katrina Lohr
